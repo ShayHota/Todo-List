@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="container">
+<h1>Work List</h1>
+
+<% for(let i=0; i<workData.length ;i++) { %>
+    <div>
+        <label for="<%=workData[i]%>">
+        <input type="checkbox" onclick="
+            let inputData = document.querySelector('#<%=workData[i]%>');
+
+            if(this.checked){inputData.classList.add('check')}
+            else if(this.checked==false){inputData.classList.remove('check');}" >
+        </label>
+        <input type="text" value="<%=workData[i]%>"  id= "<%= workData[i] %>" class="loopInput">
+    </div>
+    <% } %>
+<form action="/work" method="post">
+    <div class="formContainer">       
+        <input type="text" class=" formInput"  name="tasks" placeholder="Your Work Task">
+        <input type="submit" class=" formButton" value="Add">
+    </div>
+    
+</form>
+</div>
+
+</body>
+</main>
+</html>
+<%- include("partials/footer.ejs") %>

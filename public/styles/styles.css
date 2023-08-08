@@ -1,0 +1,124 @@
+:root {
+  --ff-montserrat-400ita:'Montserrat', sans-serif;
+}
+
+/* css reset code*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+  }
+ 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+ 
+  input, button, textarea, select {
+    font: inherit;
+  }
+ 
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap:break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* General styling */
+
+  body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.nav {
+    background-image:linear-gradient(
+      to right, antiquewhite, rgb(233, 196, 148));
+
+    display: flex;
+    gap: 1.5rem;
+    padding :1rem;
+    font-family: var(--ff-montserrat-400ita);
+    font-weight: bold;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+ .container{
+    display: grid;
+    place-content: center;
+ }
+
+ .check{
+  text-decoration: line-through;
+ }
+
+ .formContainer{
+  margin-top: 5rem;
+  background-image:linear-gradient(
+    to right, antiquewhite, rgb(233, 196, 148));
+  padding: 0.525rem;
+  border-radius: 0.550rem;
+  width: 18rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+
+ .formButton{
+  background-color: rgb(233, 196, 148);
+  border: none;
+  font-family: var(--ff-montserrat-400ita);
+  cursor: pointer;
+  padding: 0.5rem;
+  
+  
+ }
+
+ .formInput{
+  background-image:linear-gradient(
+    to right, antiquewhite, rgb(233, 196, 148));
+    border: hidden;
+    padding: 0.5rem;
+    text-align: center;
+   
+ }
+.formInput:focus{
+  outline: none;
+}
+
+.loopInput{
+  text-align: center;
+  letter-spacing: 0.025rem;
+  padding: 0.250rem;
+  width:90%;
+}
+
+h1{
+  background-image:linear-gradient(
+    to right, antiquewhite, rgb(233, 196, 148));
+  margin: 1rem;
+  padding: 0.450rem;
+  border-radius: 0.750rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+footer{
+  flex: auto;
+  color: rgb(182, 179, 179);
+}
+
+ 
